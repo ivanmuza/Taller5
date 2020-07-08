@@ -1,0 +1,25 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+.title-text-shadow{
+	color: #27cbcc;
+    text-shadow: 0 0 30px #bcfdfc, 0 0 50px #ffffff;
+}
+
+.subtitle-text-shadow{
+	color: #d90101;
+    text-shadow: 0 0 30px #da2426, 0 0 50px #ffffff;
+}
+
+.label-bold-large{
+    font-size: x-large;
+    font-weight: bold;
+}
