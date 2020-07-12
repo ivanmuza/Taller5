@@ -13,6 +13,8 @@
           event.preventDefault()
           event.stopPropagation()
         }
+        valDireccion();
+
         form.classList.add('was-validated')
       }, false)
     })
