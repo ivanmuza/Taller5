@@ -77,10 +77,6 @@ function validarContraseñas(){
 
 function onloadPage() {
     randomPrefDir();
-    /*var formPage = document.getElementById("formPage");
-    formPage.onsubmit = function() {
-        registrarse()
-    };*/
     var dir = document.getElementById("dir");
     dir.addEventListener('change', valDireccion);
     var pass1 = document.getElementById("pass1");
