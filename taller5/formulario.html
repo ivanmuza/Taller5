@@ -3,18 +3,17 @@
     <head>
         <meta charset="utf-8"/>
         <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
-        <link href="bootstrap.css" rel="stylesheet"/>
-        <link href="estilos.css" rel="stylesheet"/>
-        <link href="form-validation.css" rel="stylesheet"/>
-        <link href="font-awesome-4/css/font-awesome.min.css" rel="stylesheet"/>
+        <link href="css/bootstrap.css" rel="stylesheet"/>
+        <link href="css/estilos.css" rel="stylesheet"/>
+        <link href="css/form-validation.css" rel="stylesheet"/>
     </head>
     <body onload="onloadPage();">
         <div class="container">
             <div class="py-5 text-center">
-                <h1>Formulario Registro</h1>
+                <h1>Registro</h1>
             </div>
             <div class="col-md-12 order-md-1">
-                <form id="formPage" class="needs-validation" novalidate="" action="welcomePage.html">
+                <form id="formPage" class="needs-validation" novalidate="" action="final.html">
                     <div class="mb-3">
                         <label style="font-weight: bold;">
                             Identificación
@@ -883,6 +882,83 @@
                             </input>
                         </div>
                     </div>
+
+                    <b>Registro de gustos vehículo</b>
+                    <input type="checkbox" name="check" id="check" value="1" onchange="javascript:showContent()"/>
+                    <div id="content" style="display: none;"></br>
+                    <div class="row mb-3">
+                        <label class="control-label col-md-3 col-sm-6" style="font-weight: bold;">Color</label>
+                        <div class="col-md-4 col-sm-6">
+                            <select class="form-control" name="pais" style="width: 100%" class="input-group-prepend">>
+                            <option id="AF" value="Elegir">Seleccionar color</option>
+                            <option id="A" value="blanco">Blanco</option>
+                            <option id="N" value="negro">Negro</option>
+                            <option id="P" value="plata">Plata</option>
+                            <option id="R" value="rojo">Rojo</option>
+                            <option id="Az" value="azul">Azul</option>
+                            <option id="B" value="beige">Beige</option>
+                            <option id="An" value="ana">Anajanjado</option>
+                            <option id="v" value="verde">Verde</option>
+                            </select>
+                        </div>
+                    </div><br/>
+                    <div class="row mb-3">
+                        <label class="control-label col-md-3 col-sm-6" style="font-weight: bold;">Marca</label>
+                        <div class="col-md-4 col-sm-6">
+                            <select class="form-control" name="pais" style="width: 100%" class="input-group-prepend">>
+                            <option value="0" selected="">Seleccionar marca</option>
+                            <option value="1">Abarth</option>
+                            <option value="2">Audi</option>
+                            <option value="3">BMW</option>
+                            <option value="4">Ferrari</option>
+                            <option value="5">Ford</option>
+                            <option value="6">Honda</option>
+                            <option value="7">Jeep</option>
+                            <option value="8">Kia</option>
+                            <option value="9">Lamborghini</option>
+                            <option value="10">Maserati</option>
+                            <option value="11">Mazda</option>
+                            <option value="12">Mercedes-Benz</option>
+                            <option value="13">Renault</option>
+                            <option value="14">Toyota</option>  
+                            </select>
+                        </div>
+                    </div><br/>
+                    <div class="row mb-3">
+                        <label class="control-label col-md-3 col-sm-6" style="font-weight: bold;">Estilo</label>
+                        <div class="col-md-4 col-sm-6">
+                            <select class="form-control" name="pais" style="width: 100%" class="input-group-prepend">>
+                            <option value="0" selected="">Seleccionar estilo</option>
+                            <option value="1">Monovolumen</option>
+                            <option value="2">Berlina o sedán</option>
+                            <option value="3">Cupé</option>
+                            <option value="4">Roadster</option>
+                            <option value="5">Todoterreno</option>
+                            <option value="6">Crossover</option>
+                            <option value="7">Deportivo</option>
+                            </select>
+                        </div>
+                    </div><br/>
+                    <div class="row mb-3">
+                        <label class="control-label col-md-3 col-sm-6" style="font-weight: bold;">Modelo</label>
+                        <div class="col-md-4 col-sm-6">
+                            <select class="form-control" name="pais" style="width: 100%" class="input-group-prepend">>
+                            <option id="" value="Elegir">Seleccionar modelo</option>
+                            <option id="1" value="2015">2015</option>
+                            <option id="2" value="2016">2016</option>
+                            <option id="3" value="2017">2017</option>
+                            <option id="4" value="2018">2018</option>
+                            <option id="5" value="2019">2019</option>
+                            <option id="6" value="2020">2020</option>
+                            </select>
+                        </div>
+                    </div><br/>
+                    <b>Precio ($)</b>
+                    <div class="multi-range-field my-5 pb-5">
+                    <b>Min:</b><b>10M</b>  <input id="multi" class="multi-range" type="range" /> <b>100M</b></br>
+                    <b>Max:</b> <b>10M</b>  <input id="multi" class="multi-range" type="range" /> <b>100M</b>
+                    </div>
+                    </div>
                     <hr class="mb-4">
                         <button class="btn btn-primary btn-lg btn-block" type="submit">
                             Registrarse
@@ -897,11 +973,10 @@
         </footer>
     </body>
 </html>
-<script crossorigin="anonymous" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" src="https://code.jquery.com/jquery-3.5.1.slim.min.js">
 </script>
-<script src="bootstrap.bundle.js">
+<script src="js/bootstrap.bundle.js">
 </script>
-<script src="function_page.js">
+<script src="js/function_page.js">
 </script>
-<script src="form-validation.js">
+<script src="js/form-validation.js">
 </script>
